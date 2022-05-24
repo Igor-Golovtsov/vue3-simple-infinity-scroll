@@ -112,7 +112,7 @@ function _nonIterableRest() {
     };
   }
 });var _withScopeId = function _withScopeId(n) {
-  return vue.pushScopeId("data-v-21dd9ffe"), n = n(), vue.popScopeId(), n;
+  return vue.pushScopeId("data-v-6f28c7e1"), n = n(), vue.popScopeId(), n;
 };
 
 var _hoisted_1 = {
@@ -170,9 +170,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   } else {
     style.appendChild(document.createTextNode(css));
   }
-}var css_248z = "\n.vue3-simple-infinity-scroll[data-v-21dd9ffe] {\n    width: 100%;\n    max-width: 900px;\n    margin: 16px auto;\n    padding: 16 24px;\n    font-family: \"Open Sans\", Arial, sans-serif;\n}\n.vue3-simple-infinity-scroll__trigger-element[data-v-21dd9ffe] {\n    width: 100%;\n    height: 1px;\n}\n.vue3-simple-infinity-scroll__loading[data-v-21dd9ffe] {\n    padding: 16px 0;\n    text-align: center;\n}\n.vue3-simple-infinity-scroll__no-more[data-v-21dd9ffe] {\n    padding: 16px 0;\n    text-align: center;\n}\n";
+}var css_248z = "\n.vue3-simple-infinity-scroll[data-v-6f28c7e1] {\n    width: 100%;\n}\n.vue3-simple-infinity-scroll__trigger-element[data-v-6f28c7e1] {\n    width: 100%;\n    height: 3px;\n    background: red;\n}\n.vue3-simple-infinity-scroll__loading[data-v-6f28c7e1] {\n    padding: 16px 0;\n    text-align: center;\n}\n.vue3-simple-infinity-scroll__no-more[data-v-6f28c7e1] {\n    padding: 16px 0;\n    text-align: center;\n}\n";
 styleInject(css_248z);script.render = render;
-script.__scopeId = "data-v-21dd9ffe";// Import vue component
+script.__scopeId = "data-v-6f28c7e1";// Import vue component
 
 // Default export is installable instance of component.
 // IIFE injects install function into component, allowing component

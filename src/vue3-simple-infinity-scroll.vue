@@ -35,7 +35,11 @@ export default /* #__PURE__ */defineComponent({
       }
 
       observer = new IntersectionObserver(([entry]) => {
-        const isCanEmit = entry && entry.isIntersecting && !isInitRequest.value && !isLoading.value && canLoad.value
+        const isCanEmit = entry
+          && entry.isIntersecting
+          && !isInitRequest.value
+          && !isLoading.value
+          && canLoad.value
 
         if (isCanEmit) {
           emit('on-load-more')
@@ -86,15 +90,12 @@ export default /* #__PURE__ */defineComponent({
 <style scoped>
   .vue3-simple-infinity-scroll {
     width: 100%;
-    max-width: 900px;
-    margin: 16px auto;
-    padding: 16 24px;
-    font-family: "Open Sans", Arial, sans-serif;
   }
 
   .vue3-simple-infinity-scroll__trigger-element {
     width: 100%;
-    height: 1px;
+    height: 3px;
+    background: red;
   }
 
   .vue3-simple-infinity-scroll__loading {

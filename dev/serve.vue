@@ -64,6 +64,7 @@ export default defineComponent({
       :isLoading="isLoading"
       :canLoad="page <= totalPages"
       :is-init-request="page === 1"
+      class="posts-wrapper"
       @on-load-more="fetchPosts"
     >
       <template #content>
@@ -85,8 +86,18 @@ export default defineComponent({
 </template>
 
 <style scoped>
+  #app {
+    font-family: "Open Sans", Arial, sans-serif;
+  }
+
+  .posts-wrapper {
+    max-width: 800px;
+    margin: 16px auto;
+    padding: 16 24px;
+  }
+
   .post {
-    padding: 4px 8px;
+    padding: 16px;
     border-radius: 4px;
     background: #fff;
     border: 1px solid #9cb3b5;
@@ -97,7 +108,13 @@ export default defineComponent({
   }
 
   .post__title {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .post__title {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 22px;
   }
 </style>
