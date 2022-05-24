@@ -23,5 +23,8 @@ npm i -S vue3-simple-infinity-scroll
 | `on-load-more` | Event is called when the lower part of the container has appeared in the visible area. |
 
 
+### Example:
+An example can be found in the dev folder.
+
 ### License
 MIT License
