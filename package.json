@@ -1,17 +1,17 @@
 {
-  "name": "vue-3-infinity-scroll",
+  "name": "vue3-simple-infinity-scroll",
   "version": "0.0.1",
-  "description": "Vue3 infinity scroll.",
+  "description": "Vue3 simple infinity scroll.",
   "author": "Igor Golovtsov",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Igor-Golovtsov/vue3-infinity-scroll.git"
+    "url": "git+https://github.com/Igor-Golovtsov/vue3-simple-infinity-scroll.git"
   },
   "bugs": {
-    "url": "https://github.com/Igor-Golovtsov/vue3-infinity-scroll/issues"
+    "url": "https://github.com/Igor-Golovtsov/vue3-simple-infinity-scroll/issues"
   },
-  "homepage": "https://github.com/Igor-Golovtsov/vue3-infinity-scroll",
+  "homepage": "https://github.com/Igor-Golovtsov/vue3-simple-infinity-scroll",
   "scripts": {
     "serve": "vue-cli-service serve dev/serve.ts",
     "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
@@ -22,10 +22,10 @@
     "postbuild": "rimraf ./dist/types/dev ./dist/types/src/entry.d.ts",
     "prebuild": "rimraf ./dist"
   },
-  "main": "dist/vue3-infinity-scroll.ssr.js",
-  "module": "dist/vue3-infinity-scroll.esm.js",
-  "browser": "dist/vue3-infinity-scroll.esm.js",
-  "unpkg": "dist/vue3-infinity-scroll.min.js",
+  "main": "dist/vue3-simple-infinity-scroll.ssr.js",
+  "module": "dist/vue3-simple-infinity-scroll.esm.js",
+  "browser": "dist/vue3-simple-infinity-scroll.esm.js",
+  "unpkg": "dist/vue3-simple-infinity-scroll.min.js",
   "files": [
     "dist/*",
     "src/**/*.vue"

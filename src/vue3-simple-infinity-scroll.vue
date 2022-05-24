@@ -8,7 +8,7 @@ import {
 } from 'vue'
 
 export default /* #__PURE__ */defineComponent({
-  name: 'Vue3InfinityScroll',
+  name: 'Vue3SimpleInfinityScroll',
   props: {
     isInitRequest: {
       type: Boolean,
@@ -61,7 +61,7 @@ export default /* #__PURE__ */defineComponent({
 </script>
 
 <template>
-  <div class="vue3-infinity-scroll">
+  <div class="vue3-simple-infinity-scroll">
     <slot
       name="content"
     />
@@ -69,22 +69,22 @@ export default /* #__PURE__ */defineComponent({
       v-if="isLoading"
       name="loading"
     >
-      <div class="vue3-infinity-scroll__loading">Loading...</div>
+      <div class="vue3-simple-infinity-scroll__loading">Loading...</div>
     </slot>
     <slot
       v-if="!canLoad && !isLoading"
       name="no-more"
     >
-      <div class="vue3-infinity-scroll__no-more">No more</div>
+      <div class="vue3-simple-infinity-scroll__no-more">No more</div>
     </slot>
     <div
       ref="triggerElement"
-      class="vue3-infinity-scroll__trigger-element" />
+      class="vue3-simple-infinity-scroll__trigger-element" />
   </div>
 </template>
 
 <style scoped>
-  .vue3-infinity-scroll {
+  .vue3-simple-infinity-scroll {
     width: 100%;
     max-width: 900px;
     margin: 16px auto;
@@ -92,17 +92,17 @@ export default /* #__PURE__ */defineComponent({
     font-family: "Open Sans", Arial, sans-serif;
   }
 
-  .vue3-infinity-scroll__trigger-element {
+  .vue3-simple-infinity-scroll__trigger-element {
     width: 100%;
     height: 1px;
   }
 
-  .vue3-infinity-scroll__loading {
+  .vue3-simple-infinity-scroll__loading {
     padding: 16px 0;
     text-align: center;
   }
 
-  .vue3-infinity-scroll__no-more {
+  .vue3-simple-infinity-scroll__no-more {
     padding: 16px 0;
     text-align: center;
   }

@@ -55,8 +55,8 @@ function _arrayLikeToArray(arr, len) {
 
 function _nonIterableRest() {
   throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}var script = /*#__PURE__*/vue.defineComponent({
-  name: 'Vue3InfinityScroll',
+}var script = /* #__PURE__ */vue.defineComponent({
+  name: 'Vue3SimpleInfinityScroll',
   props: {
     isInitRequest: {
       type: Boolean,
@@ -112,28 +112,28 @@ function _nonIterableRest() {
     };
   }
 });var _withScopeId = function _withScopeId(n) {
-  return vue.pushScopeId("data-v-bd950410"), n = n(), vue.popScopeId(), n;
+  return vue.pushScopeId("data-v-21dd9ffe"), n = n(), vue.popScopeId(), n;
 };
 
 var _hoisted_1 = {
-  class: "vue3-infinity-scroll"
+  class: "vue3-simple-infinity-scroll"
 };
 
 var _hoisted_2 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/vue.createElementVNode("div", {
-    class: "vue3-infinity-scroll__loading"
+    class: "vue3-simple-infinity-scroll__loading"
   }, "Loading...", -1);
 });
 
 var _hoisted_3 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/vue.createElementVNode("div", {
-    class: "vue3-infinity-scroll__no-more"
+    class: "vue3-simple-infinity-scroll__no-more"
   }, "No more", -1);
 });
 
 var _hoisted_4 = {
   ref: "triggerElement",
-  class: "vue3-infinity-scroll__trigger-element"
+  class: "vue3-simple-infinity-scroll__trigger-element"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return vue.openBlock(), vue.createElementBlock("div", _hoisted_1, [vue.renderSlot(_ctx.$slots, "content"), _ctx.isLoading ? vue.renderSlot(_ctx.$slots, "loading", {
@@ -170,14 +170,14 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   } else {
     style.appendChild(document.createTextNode(css));
   }
-}var css_248z = "\n.vue3-infinity-scroll[data-v-bd950410] {\n    display: block;\n    width: 100%;\n    max-width: 600px;\n    margin: 25px auto;\n    padding: 25px;\n    font-family: \"Open Sans\", Arial, sans-serif;\n}\n.vue3-infinity-scroll__trigger-element[data-v-bd950410] {\n    width: 100%;\n    height: 1px;\n}\n.vue3-infinity-scroll__loading[data-v-bd950410] {\n    padding: 16px 0;\n    text-align: center;\n}\n.vue3-infinity-scroll__no-more[data-v-bd950410] {\n    padding: 16px 0;\n    text-align: center;\n}\n";
+}var css_248z = "\n.vue3-simple-infinity-scroll[data-v-21dd9ffe] {\n    width: 100%;\n    max-width: 900px;\n    margin: 16px auto;\n    padding: 16 24px;\n    font-family: \"Open Sans\", Arial, sans-serif;\n}\n.vue3-simple-infinity-scroll__trigger-element[data-v-21dd9ffe] {\n    width: 100%;\n    height: 1px;\n}\n.vue3-simple-infinity-scroll__loading[data-v-21dd9ffe] {\n    padding: 16px 0;\n    text-align: center;\n}\n.vue3-simple-infinity-scroll__no-more[data-v-21dd9ffe] {\n    padding: 16px 0;\n    text-align: center;\n}\n";
 styleInject(css_248z);script.render = render;
-script.__scopeId = "data-v-bd950410";// Import vue component
+script.__scopeId = "data-v-21dd9ffe";// Import vue component
 
 // Default export is installable instance of component.
 // IIFE injects install function into component, allowing component
 // to be registered via Vue.use() as well as Vue.component(),
-var component = /*#__PURE__*/(function () {
+var component = /* #__PURE__ */(function () {
   // Assign InstallableComponent type
   var installable = script; // Attach install function executed by Vue.use()
 
@@ -187,8 +187,8 @@ var component = /*#__PURE__*/(function () {
 
   return installable;
 })(); // It's possible to expose named exports when writing components that can
-// also be used as directives, etc. - eg. import { RollupDemoDirective } from 'rollup-demo';
-// export const RollupDemoDirective = directive;
+// also be used as directives, etc. - eg. import { RollupDemoDirective } from 'rollup-demo'
+// export const RollupDemoDirective = directive
 var namedExports=/*#__PURE__*/Object.freeze({__proto__:null,'default':component});// only expose one global var, with named exports exposed as properties of
 // that global var (eg. plugin.namedExport)
 

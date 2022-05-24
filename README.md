@@ -1,11 +1,11 @@
-#vue3-infinity-scroll
+#vue3-simple-infinity-scroll
 
 Infinity scroll is a simple component for vue 3 written in typescript and without dependencies.
 
 ### Installation:
 
 ```
-npm install ********
+npm i -S vue3-simple-infinity-scroll
 ```
 
 ### Props:

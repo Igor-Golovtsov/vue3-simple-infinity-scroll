@@ -4,7 +4,7 @@ import {
   defineComponent,
   ref
 } from 'vue'
-import Vue3InfinityScroll from '@/vue3-infinity-scroll.vue'
+import Vue3SimpleInfinityScroll from '@/vue3-simple-infinity-scroll.vue'
 
 interface IPost {
   id: number;
@@ -16,7 +16,7 @@ interface IPost {
 export default defineComponent({
   name: 'ServeDev',
   components: {
-    Vue3InfinityScroll
+    Vue3SimpleInfinityScroll
   },
   setup() {
     const limit = ref(10)
@@ -60,7 +60,7 @@ export default defineComponent({
 
 <template>
   <div id="app">
-    <vue3-infinity-scroll
+    <vue3-simple-infinity-scroll
       :isLoading="isLoading"
       :canLoad="page <= totalPages"
       :is-init-request="page === 1"
@@ -80,7 +80,7 @@ export default defineComponent({
           </div>
         </div>
       </template>
-    </vue3-infinity-scroll>
+    </vue3-simple-infinity-scroll>
   </div>
 </template>
 

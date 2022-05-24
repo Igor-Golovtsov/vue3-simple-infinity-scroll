@@ -1,7 +1,7 @@
 import { defineComponent, ref, toRefs, onMounted, onBeforeUnmount, openBlock, createElementBlock, renderSlot, createCommentVNode, createElementVNode, pushScopeId, popScopeId } from 'vue';
 
-var script = /*#__PURE__*/defineComponent({
-  name: 'Vue3InfinityScroll',
+var script = /* #__PURE__ */defineComponent({
+  name: 'Vue3SimpleInfinityScroll',
   props: {
     isInitRequest: {
       type: Boolean,
@@ -59,23 +59,23 @@ var script = /*#__PURE__*/defineComponent({
 
 });
 
-const _withScopeId = n => (pushScopeId("data-v-bd950410"), n = n(), popScopeId(), n);
+const _withScopeId = n => (pushScopeId("data-v-21dd9ffe"), n = n(), popScopeId(), n);
 
 const _hoisted_1 = {
-  class: "vue3-infinity-scroll"
+  class: "vue3-simple-infinity-scroll"
 };
 
 const _hoisted_2 = /*#__PURE__*/_withScopeId(() => /*#__PURE__*/createElementVNode("div", {
-  class: "vue3-infinity-scroll__loading"
+  class: "vue3-simple-infinity-scroll__loading"
 }, "Loading...", -1));
 
 const _hoisted_3 = /*#__PURE__*/_withScopeId(() => /*#__PURE__*/createElementVNode("div", {
-  class: "vue3-infinity-scroll__no-more"
+  class: "vue3-simple-infinity-scroll__no-more"
 }, "No more", -1));
 
 const _hoisted_4 = {
   ref: "triggerElement",
-  class: "vue3-infinity-scroll__trigger-element"
+  class: "vue3-simple-infinity-scroll__trigger-element"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", _hoisted_1, [renderSlot(_ctx.$slots, "content"), _ctx.isLoading ? renderSlot(_ctx.$slots, "loading", {
@@ -112,17 +112,17 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = "\n.vue3-infinity-scroll[data-v-bd950410] {\n    display: block;\n    width: 100%;\n    max-width: 600px;\n    margin: 25px auto;\n    padding: 25px;\n    font-family: \"Open Sans\", Arial, sans-serif;\n}\n.vue3-infinity-scroll__trigger-element[data-v-bd950410] {\n    width: 100%;\n    height: 1px;\n}\n.vue3-infinity-scroll__loading[data-v-bd950410] {\n    padding: 16px 0;\n    text-align: center;\n}\n.vue3-infinity-scroll__no-more[data-v-bd950410] {\n    padding: 16px 0;\n    text-align: center;\n}\n";
+var css_248z = "\n.vue3-simple-infinity-scroll[data-v-21dd9ffe] {\n    width: 100%;\n    max-width: 900px;\n    margin: 16px auto;\n    padding: 16 24px;\n    font-family: \"Open Sans\", Arial, sans-serif;\n}\n.vue3-simple-infinity-scroll__trigger-element[data-v-21dd9ffe] {\n    width: 100%;\n    height: 1px;\n}\n.vue3-simple-infinity-scroll__loading[data-v-21dd9ffe] {\n    padding: 16px 0;\n    text-align: center;\n}\n.vue3-simple-infinity-scroll__no-more[data-v-21dd9ffe] {\n    padding: 16px 0;\n    text-align: center;\n}\n";
 styleInject(css_248z);
 
 script.render = render;
-script.__scopeId = "data-v-bd950410";
+script.__scopeId = "data-v-21dd9ffe";
 
 // Import vue component
 // IIFE injects install function into component, allowing component
 // to be registered via Vue.use() as well as Vue.component(),
 
-var entry_esm = /*#__PURE__*/(() => {
+var entry_esm = /* #__PURE__ */(() => {
   // Assign InstallableComponent type
   const installable = script; // Attach install function executed by Vue.use()
 
@@ -132,7 +132,7 @@ var entry_esm = /*#__PURE__*/(() => {
 
   return installable;
 })(); // It's possible to expose named exports when writing components that can
-// also be used as directives, etc. - eg. import { RollupDemoDirective } from 'rollup-demo';
-// export const RollupDemoDirective = directive;
+// also be used as directives, etc. - eg. import { RollupDemoDirective } from 'rollup-demo'
+// export const RollupDemoDirective = directive
 
 export { entry_esm as default };
