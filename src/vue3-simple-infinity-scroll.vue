@@ -94,8 +94,7 @@ export default /* #__PURE__ */defineComponent({
 
   .vue3-simple-infinity-scroll__trigger-element {
     width: 100%;
-    height: 3px;
-    background: red;
+    height: 1px;
   }
 
   .vue3-simple-infinity-scroll__loading {
